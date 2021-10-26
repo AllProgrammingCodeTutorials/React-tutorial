@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import './Navbar.css'; //external css
-import './Footer.css';
 
 const Navbar = () => {
     return(

@@ -6,6 +6,10 @@ import Academic from "./components/Academic";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Content from "./components/Content";
+
+let lname = 25;
+let marks = 40;
 function App() {
   return (
     <Router>
@@ -19,6 +23,7 @@ function App() {
         </Switch>
       </div>
       <Footer />
+      <Content fname= "anju" lname={lname} marks={marks} />
     </Router>
   );
 }
