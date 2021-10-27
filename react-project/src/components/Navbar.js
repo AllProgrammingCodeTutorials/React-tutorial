@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className= "menu-link">
                 <ul>
                 <li><Link className="active" to="/home">Home</Link></li>
-                <li><Link className="active" to="/contact">Contact</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/academic">Academic</Link></li>
                 <li><Link to="/experience">Experience</Link></li>
                 <li><a href="https://www.linkedin.com/in/purnimagurung/" target= "_purnima"><FaLinkedin/></a></li>

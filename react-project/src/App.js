@@ -10,6 +10,16 @@ import Content from "./components/Content";
 
 let lname = 25;
 let marks = 40;
+const data=[
+  {
+    Name:"purnima",
+    City:"Germany"
+  },
+  {
+    Name:"Upen",
+    City:"Cananda"
+  },
+];
 function App() {
   return (
     <Router>
@@ -17,13 +27,13 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/home" component={Home} />
-          <Route exact path="/contact" component={Contact}/>
-          <Route exact path="/academic" component={Academic}/>
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/academic" component={Academic} />
           <Route exact path="/experience" component={Experience}/>
         </Switch>
       </div>
       <Footer />
-      <Content fname= "anju" lname={lname} marks={marks} />
+        <Content fname= "anju" lname={lname} marks={marks} item = {data} />
     </Router>
   );
 }

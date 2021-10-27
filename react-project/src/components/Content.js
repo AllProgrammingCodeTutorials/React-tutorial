@@ -13,6 +13,21 @@ const Content = (props) => {
                 props.marks >100 ?"yes":"no"
                 }
             </h2>
+
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>City</th>
+              </tr>
+              {/* //using map loop */}
+              {props.item.map((data)=> 
+                <tr>
+                  <td>{data.Name}</td>
+                  <td>{data.City}</td>
+                </tr>
+              )}
+            
+          </table>
         </div>
     )
 }
